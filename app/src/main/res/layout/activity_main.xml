@@ -44,7 +44,7 @@
         android:textSize="50sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewAddition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textViewTimer"
@@ -55,27 +55,27 @@
         tools:textColor="@android:color/black" />
 
 
-
-        <Button
-            android:id="@+id/buttonOne"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/textViewTimer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_column="0"
-            app:layout_row="0"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_gravity="fill"
-            android:text="3"
-            android:tag="0"
-            android:padding="30dp"
-            android:layout_marginRight="10dp"
-           />
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTimer"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="chooseAnswer"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="30dp"
+        android:tag="0"
+        android:text="3"
+        app:layout_column="1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_row="0"
+        app:layout_rowWeight="1" />
     <Button
         android:id="@+id/buttonTwo"
         android:layout_toRightOf="@id/buttonOne"
-        android:layout_below="@id/textView4"
+        android:layout_below="@id/textViewAddition"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,6 +88,8 @@
         android:tag="1"
         android:padding="30dp"
         android:layout_marginRight="10dp"
+        android:onClick="chooseAnswer"
+        android:background="@android:color/holo_blue_dark"
         />
     <Button
         android:id="@+id/buttonThree"
@@ -105,6 +107,8 @@
         android:tag="2"
         android:padding="30dp"
         android:layout_marginLeft="10dp"
+        android:onClick="chooseAnswer"
+        android:background="@android:color/holo_blue_dark"
         />
 
 
@@ -123,6 +127,8 @@
         android:tag="3"
         android:padding="30dp"
         android:layout_marginRight="10dp"
+        android:onClick="chooseAnswer"
+        android:background="@android:color/holo_blue_dark"
         />
     <Button
         android:id="@+id/buttonFive"
@@ -140,6 +146,8 @@
         android:tag="4"
         android:padding="30dp"
         android:layout_marginRight="10dp"
+        android:onClick="chooseAnswer"
+        android:background="@android:color/holo_blue_dark"
         />
     <Button
         android:id="@+id/buttonSix"
@@ -157,8 +165,19 @@
         android:tag="5"
         android:padding="30dp"
         android:layout_marginLeft="10dp"
+        android:onClick="chooseAnswer"
+        android:background="@android:color/holo_blue_dark"
         />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:text="Correct!"
+        android:textSize="40sp" />
 
 
 </RelativeLayout>
